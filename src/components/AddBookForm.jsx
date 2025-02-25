@@ -37,6 +37,7 @@ const AddBookForm = () => {
             }
             const data =  await response.json()
             console.log('Book added.', data)
+            window.location.reload()
         }
         catch(error){
             throw error
